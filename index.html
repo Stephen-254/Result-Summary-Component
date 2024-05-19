@@ -11,27 +11,19 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     *{
-      box-sizing: border-box;
       scroll-behavior: smooth;
     }
 
     body{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+      height: 100vh;
 
+    }
     .main-section{
-      display: grid;
-      grid-template-columns: 1.5fr 1.5fr;
-      gap: 20px;
-    }
-
-    #card-one{
       display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+    }
+    #card-one{
       border: 2px solid black;
       max-width: 320px;
       text-align: center;
@@ -39,6 +31,8 @@
       border-radius: 20px;
       font-size:20px;
       border: 0;
+      width: 500px;
+      height: 450px;
     }
 
     div.score{
@@ -56,27 +50,31 @@
   }
 
     #card-two{
+      border: 2px solid ;
       border-radius: 20px;
-      border: 2px solid black;
+      max-width: 320px;
+      height: 500px;
+      width: 300px;
+      padding-right: 50px;
     }
 
     .btn-one{
-      background-color: hsl(0, 100%, 67%);
+      background-color: hsla(0, 100%, 67%, 0.4);
       border-radius: 10px;
     }
 
     .btn-two{
-      background-color:  hsla(39, 100%, 56%);
+      background-color:  hsla(39, 100%, 56%, 0.4);
       border-radius: 10px;
     }
 
     .btn-three{
-      background-color: hsl(166, 100%, 37%);
+      background-color: hsla(166, 100%, 37%, 0.4);
       border-radius: 10px;
     }
 
     .btn-four{
-      background-color: hsl(234, 85%, 45%);
+      background-color: hsla(234, 85%, 45%, 0.4);
       border-radius: 10px;
     }
 
@@ -88,7 +86,12 @@
       text-align: center;
       align-items: center;
       width: 100%;
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
+
+    
 
     aside{
       display: flex;
