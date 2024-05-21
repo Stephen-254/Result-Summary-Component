@@ -42,17 +42,24 @@
     div.score{
       border-radius: 50%;
       border: 2px solid black;
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
       text-align: center;
-      background-color: hsla(256, 72%, 46%, 1);
+      background-color: hsl(252, 98%, 55%);
       border: 0;
       margin-left: 105px;
     }
-  .score p{
-      margin-top: 65px;
-      padding-top: 64px;
-  }
+    #superscript{
+      padding-top: 50px;
+      font-size: 50px;
+      margin-bottom: 5px;
+    }
+    #subscript{
+      padding: 0;
+      margin: 0;
+      font-size: 15px;
+      font-weight: 400;
+    }
     #card-two{
       border: 2px solid ;
       border-radius: 20px;
@@ -70,21 +77,25 @@
     .btn-one{
       background-color: hsla(0, 100%, 67%, 0.4);
       border-radius: 10px;
+      color: hsla(0, 100%, 67%, 0.4);
     }
 
     .btn-two{
       background-color:  hsla(39, 100%, 56%, 0.4);
       border-radius: 10px;
+      color: hsla(39, 100%, 56%, 0.4);
     }
 
     .btn-three{
       background-color: hsla(166, 100%, 37%, 0.4);
       border-radius: 10px;
+      color: hsla(166, 100%, 37%, 0.4);
     }
 
     .btn-four{
       background-color: hsla(234, 85%, 45%, 0.4);
       border-radius: 10px;
+      color: hsla(234, 85%, 45%, 0.4);
     }
 
     .btn-one, 
@@ -122,6 +133,7 @@
       align-items: center;
       justify-content: center;
       width: 100%;
+      color: black;
     }
 
     footer button{
@@ -129,9 +141,10 @@
       height: 50px;
       border-radius: 20px;
       font-size: 18px;
-      background-color: hsl(221, 100%, 96%);
+      background-color: hsl(224, 30%, 27%);
       margin-left: 40px;
       border: 0;
+      color: whitesmoke;
     }
 
     footer{
@@ -149,8 +162,8 @@
     <article id="card-one">
       <h2>Your result</h2>
       <div class="score">
-       <h1>70</h1>
-       <h1>of 100</h1>
+       <h1 id="superscript">76</h1>
+       <h1 id="subscript">of 100</h1>
       </div>
       <h3>Great</h3>
       <p>Your score higher than 65% of the people who have taken these tests</p>
