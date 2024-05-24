@@ -10,16 +10,21 @@
 
   
   <style>
+    
     *{
       scroll-behavior: smooth;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+
     body{
-     background-color: hsl(0, 0%, 100%);
+      width: 100%;
+      background-color: hsl(0, 0%, 100%);
+      margin: 0;
+      padding: 0;
     }
     .main-section{
       display: grid;
-      grid-template-columns: repeat(2, 325px);
+      grid-template-columns: repeat(2, auto);
       justify-content: center;
       align-items: center;
       height: auto;
@@ -27,14 +32,13 @@
       margin-top: 20em;
     }
     #card-one{
-      border: 2px solid black;
       text-align: center;
       background-color: hsl(241, 96%, 62%);
       border-radius: 20px;
       font-size:20px;
       border: 0;
-      width: 380px;
-      height: 500px;
+      width: 400px;
+      height: 550px;
       color: whitesmoke;
       box-shadow: 0 20px 20px hsl(221, 100%, 96%);
     }
@@ -72,8 +76,8 @@
       box-shadow: 20px 20px 20px hsl(221, 100%, 96%);
       border-radius: 20px;
       max-width: 320px;
-      width: 100%;
-      height: 500px;
+      min-width: 400px;
+      height: 550px;
       padding-right: 50px;
       margin-left: 50px;
     }
@@ -161,6 +165,10 @@
       color: whitesmoke;
     }
 
+    footer button:hover{
+      background-color: blue;
+    }
+
     footer{
       display: flex;
       align-items: center;
@@ -169,30 +177,27 @@
       margin-bottom: 15px;
     }
 
-  @media screen and (min-width: 320px) and (max-width: 475px) {
-    *{
-      padding: 0;
-      margin-left: 0;
-      margin-right: 0;
-    }
-    .main-section{
-      display: flex;
-      flex-direction: column;
-      margin-top: 0;    
-      height: 55em;
-    }
+  @media  (min-width: 320px) and (max-width: 475px) {
+  body{
+    margin-top: 0;
+  }
+  .main-section{
+    display: block;
+    margin-top: 0;
+  }
 
-    #card-one{
-      height: auto;
-      border-radius: 30px;
-      margin-right: 0;
-      padding-right: 0;
-    }
+  #card-one{
+    min-width: 500px;
+  }
 
-    #card-one p{
-      font-size: 15px;
-      text-align: center;
-    }
+  #card-one h2{
+    margin-top: 0;
+  }
+
+  div.score{
+    margin-left: auto;
+    margin-right: auto;
+  }
   }
   </style>
 </head>
