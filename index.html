@@ -22,6 +22,8 @@
     }
     .main-section{
       display: flex;
+      justify-content: center;
+      padding-top: 15em;
     }
     #card-one{
       text-align: center;
@@ -31,7 +33,6 @@
       border: 0;
       color: whitesmoke;
       box-shadow: 0 20px 20px hsl(221, 100%, 96%);
-      width: 550px;
     }
 
     #card-one h2{
@@ -39,7 +40,9 @@
     }
     
     #card-one p{
+      width: 350px;
       color: hsl(224, 8%, 73%);
+      height: 50px;
     }
     div.score{
       border-radius: 50%;
@@ -49,7 +52,7 @@
       text-align: center;
       background-color: hsl(252, 98%, 55%);
       border: 0;
-      margin-left: 99px;
+      margin-left: 80px;
     }
     #superscript{
       padding-top: 45px;
@@ -67,7 +70,7 @@
       box-shadow: 20px 20px 20px hsl(221, 100%, 96%);
       border-radius: 20px;
       padding-right: 50px;
-      margin-left: 50px;
+      margin-left: 30px;
     }
 
     #card-two h1{
@@ -164,6 +167,22 @@
       justify-content: center;
       margin-top: 30px;
       margin-bottom: 15px;
+    }
+
+    @media (min-width: 320px) and (max-width: 425px) {
+      html,
+      body{
+        height: 100%;
+        width: 100%;
+      }
+      .main-section{
+        display: flex;
+        flex-direction: column;
+      }
+
+      #card-one{
+        width: 100%;
+      }
     }
 
   
